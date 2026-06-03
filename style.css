@@ -131,3 +131,28 @@ img{
     width: 20%;
     background-color: orange;
 }
+@media screen and (max-width:768px){
+    body{
+        margin:10px;
+    }
+    nav ul li{
+        display:block;
+        margin:10px 0;
+    }
+    .card{
+        width:90%;
+        display:block;
+        margin:10px auto;
+    }
+    table{
+        font-size:14px;
+    }
+    button{
+        width:100%;
+        
+    }
+    img{
+        width:120px;
+        height:auto;
+    }
+}
