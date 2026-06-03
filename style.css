@@ -4,6 +4,20 @@ body{
     background-color: #f4f4f4;
     color:#333;
 }
+header{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   gap:15px;
+}
+header img{
+    width:120px;
+    height:100px;
+    border-radius:50;
+}
+header h1{
+    margin:0;
+}
 h1{
     text-align:center;
     color:#2c3e50;
@@ -18,9 +32,12 @@ nav{
 }
 nav ul{
     list-style-type:none;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:0;
 }
 nav ul li{
-    display:inline;
     margin-right:10px;
 }
 nav ul li a{
@@ -100,6 +117,16 @@ img{
     box-shadow: 0px 0px 8px gray;
     text-align: center;
 }
+.cards-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+.candidate-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
 .winner {
     background-color: lightgreen;
     border: 1px solid green;
@@ -135,14 +162,21 @@ img{
     body{
         margin:10px;
     }
+     nav ul{
+        flex-direction:column;
+        align-items:center;
+    }
+
     nav ul li{
-        display:block;
         margin:10px 0;
     }
     .card{
         width:90%;
         display:block;
         margin:10px auto;
+    }
+    .cards-container,.candidate-container{
+        grid-template-columns:1fr;
     }
     table{
         font-size:14px;
