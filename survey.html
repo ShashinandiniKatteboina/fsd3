@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society Survey Page</title>
+</head>
+<body>
+
+    <h1>Society Survey Form</h1>
+
+    <form>
+
+        <!-- Cleanliness Satisfaction - Radio Buttons -->
+        <h3>1. Cleanliness Satisfaction</h3>
+
+        <input type="radio" name="cleanliness" value="Excellent"> Excellent
+        <input type="radio" name="cleanliness" value="Good"> Good
+        <input type="radio" name="cleanliness" value="Average"> Average
+        <input type="radio" name="cleanliness" value="Poor"> Poor
+
+        <br><br>
+
+        <!-- Security Service Feedback - Dropdown -->
+        <h3>2. Security Service Feedback</h3>
+
+        <select name="security">
+            <option value="">Select Feedback</option>
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+        </select>
+
+        <br><br>
+
+        <!-- Parking Issues - Checkboxes -->
+        <h3>3. Parking Issues</h3>
+
+        <input type="checkbox" name="parking" value="Insufficient Space"> Insufficient Space
+        <br>
+
+        <input type="checkbox" name="parking" value="Unauthorized Parking"> Unauthorized Parking
+        <br>
+
+        <input type="checkbox" name="parking" value="Poor Markings"> Poor Markings
+        <br>
+
+        <input type="checkbox" name="parking" value="Other"> Other
+
+        <br><br>
+
+        <!-- Water Supply Feedback - Radio Buttons -->
+        <h3>4. Water Supply Feedback</h3>
+
+        <input type="radio" name="water" value="Excellent"> Excellent
+        <input type="radio" name="water" value="Good"> Good
+        <input type="radio" name="water" value="Average"> Average
+        <input type="radio" name="water" value="Poor"> Poor
+
+        <br><br>
+
+        <!-- Maintenance Quality - Dropdown -->
+        <h3>5. Maintenance Quality</h3>
+
+        <select name="maintenance">
+            <option value="">Select Rating</option>
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Average</option>
+            <option>Poor</option>
+        </select>
+
+        <br><br>
+
+        <!-- Suggestions Box - Textarea -->
+        <h3>6. Suggestions Box</h3>
+
+        <textarea name="suggestions" rows="5" cols="50"
+            placeholder="Enter your suggestions here..."></textarea>
+
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Survey</button>
+
+    </form>
+
+</body>
+</html>

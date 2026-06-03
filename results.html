@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Results</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .winner {
+            background-color: #d4edda;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid green;
+        }
+
+        .progress-container {
+            width: 100%;
+            background-color: #e0e0e0;
+            height: 20px;
+        }
+
+        .progress-bar {
+            height: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .candidate1 {
+            width: 50%;
+            background-color: green;
+        }
+
+        .candidate2 {
+            width: 30%;
+            background-color: blue;
+        }
+
+        .candidate3 {
+            width: 20%;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Poll Results</h1>
+
+    <h2>Poll Name: President Election</h2>
+
+    <div class="winner">
+        <h3>🏆 Winner: Rahul Sharma</h3>
+        <p>Received the highest number of votes.</p>
+    </div>
+
+    <h2>Result Table</h2>
+
+    <table>
+        <tr>
+            <th>Candidate Name</th>
+            <th>Votes Received</th>
+            <th>Vote Percentage</th>
+        </tr>
+
+        <tr>
+            <td>Rahul Sharma</td>
+            <td>250</td>
+            <td>50%</td>
+        </tr>
+
+        <tr>
+            <td>Priya Reddy</td>
+            <td>150</td>
+            <td>30%</td>
+        </tr>
+
+        <tr>
+            <td>Arjun Kumar</td>
+            <td>100</td>
+            <td>20%</td>
+        </tr>
+    </table>
+
+    <h2>Vote Percentage Visualization</h2>
+
+    <p>Rahul Sharma - 50%</p>
+    <div class="progress-container">
+        <div class="progress-bar candidate1">50%</div>
+    </div>
+
+    <br>
+
+    <p>Priya Reddy - 30%</p>
+    <div class="progress-container">
+        <div class="progress-bar candidate2">30%</div>
+    </div>
+
+    <br>
+
+    <p>Arjun Kumar - 20%</p>
+    <div class="progress-container">
+        <div class="progress-bar candidate3">20%</div>
+    </div>
+
+</body>
+</html>

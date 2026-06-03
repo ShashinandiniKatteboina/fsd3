@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration paget</title>
+</head>
+<body>
+    <h1>User Registration</h1>
+    <form>
+        <label for="full name">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+        <label for="houseNo">House No:</label>
+        <input type="text" id="houseNo" name="houseNo" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+        <label>Resident Type:</label>
+        <input type="radio" id="owner" name="residentType" value="Owner">
+        <label for="owner">Owner</label>
+
+        <input type="radio" id="tenant" name="residentType" value="Tenant">
+        <label for="tenant">Tenant</label>
+        <br><br>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
